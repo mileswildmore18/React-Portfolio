@@ -1,8 +1,14 @@
-import React from 'react'
+import Navbar from '/components/Nav'
+import Header from '/components/Header'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <Navbar />
+      <Header />
+      <Footer />
+    </>
+    
   )
 }
 
