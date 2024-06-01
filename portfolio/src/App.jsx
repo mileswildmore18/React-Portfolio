@@ -1,3 +1,4 @@
+//These import all of the JS files that will be featured on the portfolio along with the react routing
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from '/components/Nav';
