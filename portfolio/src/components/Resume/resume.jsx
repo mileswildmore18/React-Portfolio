@@ -1,7 +1,6 @@
 import React from 'react';
-import Resume from '';
 
-const Resume = () => {
+const ResumeComponent = () => {
     return (
         <header>
             <h1>Resume</h1>
@@ -10,4 +9,4 @@ const Resume = () => {
     );
 };
 
-export default Resume;
+export default ResumeComponent;

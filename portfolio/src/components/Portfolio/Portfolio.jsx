@@ -1,5 +1,6 @@
 import React from 'react';
-import Project from '/components/Project';
+import Project from '../Project/Project';
+
 
 const projectsData = [
     {

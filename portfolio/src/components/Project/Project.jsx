@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Project = ({ title, description, imageUrl, projectUrl }) => {
     return (
         <div className="project">
