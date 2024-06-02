@@ -4,6 +4,10 @@ import Navigation from './components/Nav/Navigation';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './App.css';
+import Portfolio from './components/Portfolio/Portfolio';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact'
+import Resume from './components/Resume/Resume'
 
 function App() {
   return (
@@ -25,7 +29,11 @@ function App() {
         </div>
       </div>
       <div className="app-content">
-        {/* main content goes here */}
+        <About />
+        <Portfolio />
+        <Contact />
+        <Resume /> 
+        
       </div>
       <Footer />
     </>

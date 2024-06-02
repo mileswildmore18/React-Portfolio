@@ -27,9 +27,8 @@ const Portfolio = () => {
     return (
         <div className='portfolio'>
             <h1>My Projects</h1>
-            {projectsData.map((project, index) => (
+            {projectsData.map((project) => (
                 <Project
-                key={index}
                 title={project.title}
                 description={project.description}
                 imageUrl={project.imageUrl}
