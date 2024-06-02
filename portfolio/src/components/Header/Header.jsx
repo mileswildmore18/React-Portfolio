@@ -5,8 +5,10 @@ const Header = () => {
     return (
         <header>
             <h1>Miles Wildmore</h1>
-            <Navigation />
+           
         </header>
+        
+           
     );
 };
 
