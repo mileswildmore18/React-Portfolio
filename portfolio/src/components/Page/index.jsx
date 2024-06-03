@@ -1,4 +1,4 @@
-import {Outlet} from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import PageContent from '../PageContent';
 
 function Page() {

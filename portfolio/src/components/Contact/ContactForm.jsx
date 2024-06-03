@@ -55,10 +55,10 @@ const ContactForm = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 required
                 className='input-message'
-                
+
             />
 
-            <button class='click' type="submit">Submit</button>
+            <button className='click' type="submit">Submit</button>
 
             {submitStatus && <p>{submitStatus}</p>}
         </form>
