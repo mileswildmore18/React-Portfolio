@@ -4,10 +4,7 @@ import Navigation from './components/Nav/Navigation';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './App.css';
-import Portfolio from './components/Portfolio/Portfolio';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact'
-import Resume from './components/Resume/Resume'
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
@@ -26,14 +23,12 @@ function App() {
         <div className="header-navigation-wrapper">
           <Header />
           <Navigation />
+          
         </div>
       </div>
       <div className="app-content">
-        <About />
-        <Portfolio />
-        <Contact />
-        <Resume /> 
-        
+        {/* Renders the first route and can also match the location of */}
+          <Outlet />
       </div>
       <Footer />
     </>

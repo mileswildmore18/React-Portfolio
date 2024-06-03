@@ -27,12 +27,13 @@ const Portfolio = () => {
     return (
         <div className='portfolio'>
             <h1>My Projects</h1>
-            {projectsData.map((project) => (
+            {projectsData.map((project, index) => (
                 <Project
-                title={project.title}
-                description={project.description}
-                imageUrl={project.imageUrl}
-                projectUrl={project.projectUrl}
+                    key={index}
+                    title={project.title}
+                    description={project.description}
+                    imageUrl={project.imageUrl}
+                    projectUrl={project.projectUrl}
                 />
             ))}
         </div>
