@@ -37,6 +37,7 @@ ul {
 footer {
   display: flex;
   flex-direction: column;
+  background-color: rgb(155, 177, 252);
 }
 
 nav {
@@ -71,6 +72,12 @@ a:link {
 
 a:hover {
   color: yellow;
+}
+
+p {
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;;
 }
 
 footer p {
