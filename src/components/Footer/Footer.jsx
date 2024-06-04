@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer>
-            <p>&copy {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+            <p>Copyright ©{new Date().getFullYear()} Miles Wildmore. <br /> All rights reserved.</p>
 
             <ul>
                 <li><a href="https://github.com/mileswildmore18" target="_blank" rel="noopener norefferer">Github</a></li>
