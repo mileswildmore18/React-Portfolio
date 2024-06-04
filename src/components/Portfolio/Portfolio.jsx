@@ -39,13 +39,6 @@ const projectsData = [
         projectUrl: 'https://mileswildmore18.github.io/Miles-Personal-Blog/',
         repoUrl: 'https://github.com/mileswildmore18/Miles-Personal-Blog'
     },
-    {
-        title: 'Employee Payroll Tracker',
-        description: 'Keep track of the payroll of each employee',
-        imageUrl: 'https://private-user-images.githubusercontent.com/163462827/319399967-fb10ab28-92fe-4033-a626-edfc09380798.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1NDIwODQsIm5iZiI6MTcxNzU0MTc4NCwicGF0aCI6Ii8xNjM0NjI4MjcvMzE5Mzk5OTY3LWZiMTBhYjI4LTkyZmUtNDAzMy1hNjI2LWVkZmMwOTM4MDc5OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwNFQyMjU2MjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YzE4ZDFhM2UxODNhNzg4YWQ2MWUwNzUxZTM0YmMxOTc4ZTAxNmE4NDQyMzJkOGJkY2EyOTk4NTc4YTcxZTc0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.f1rUyE6H4nm6bNHGvuu7AgCQWQU5IelCb6aym3E0tac',
-        projectUrl: 'https://mileswildmore18.github.io/Employee-Payroll-Tracker/',
-        repoUrl: 'https://github.com/mileswildmore18/Employee-Payroll-Tracker'
-    }
 ];
 
 const Portfolio = () => {
