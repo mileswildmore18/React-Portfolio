@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div>
             <h1>About Me</h1>
-            <img class="miles" src="./src/assets/miles-picture.jpg" alt="Miles Wildmore" />
+            <img class="miles" src="miles-picture.jpg" alt="Miles Wildmore" />
             <p>
                 My name is Miles Wildmore. I am a front end web developer who is passionate for developing websites for people. I specialize in making the pages as decorative and professional. <br />
                 Originally born in England, but now live in America since 2001. I became a U.S. citizen in January of 2018, so now I am a dual citizen for U.K. and U.S. <br />
