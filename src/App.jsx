@@ -3,7 +3,9 @@ import Wave from 'react-wavify';
 import Navigation from './components/Nav/Navigation';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import '../src/assets/css/reset.css'
 import './App.css';
+
 import { Outlet } from 'react-router-dom';
 import { PathnameProvider } from './components/PathnameContext/PathnameContext';
 

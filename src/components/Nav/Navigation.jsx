@@ -6,10 +6,10 @@ function Navigation() {
     return (
         <nav>
             <ul>
-                <li className={location.pathname === "/" ? "active" : ""}><Link to="/">About Me</Link></li>
-                <li className={location.pathname === "/Portfolio" ? "active" : ""}><Link to="/Portfolio">Portfolio</Link></li>
-                <li className={location.pathname === "/Contact" ? "active" : ""}><Link to="/Contact">Contact</Link></li>
-                <li className={location.pathname === "/Resume" ? "active" : ""}><Link to="/Resume">Resume</Link></li>
+                <li><Link to="/" className={location.pathname === "/" ? "active" : ""}>About Me</Link></li>
+                <li><Link to="/Portfolio" className={location.pathname === "/Portfolio" ? "active" : ""}>Portfolio</Link></li>
+                <li><Link to="/Contact" className={location.pathname === "/Contact" ? "active" : ""}>Contact</Link></li>
+                <li><Link to="/Resume" className={location.pathname === "/Resume" ? "active" : ""}>Resume</Link></li>
             </ul>
         </nav>
 
