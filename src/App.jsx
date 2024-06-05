@@ -5,10 +5,11 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './App.css';
 import { Outlet } from 'react-router-dom';
+import { PathnameProvider } from './components/PathnameContext/PathnameContext';
 
 function App() {
   return (
-    <>
+    <PathnameProvider>
       <div className="header-wave-container">
         <Wave
           fill='#1277b0'
@@ -23,15 +24,15 @@ function App() {
         <div className="header-navigation-wrapper">
           <Header />
           <Navigation />
-          
+
         </div>
       </div>
       <div className="app-content">
         {/* Renders the first route and can also match the location of */}
-          <Outlet />
+        <Outlet />
       </div>
       <Footer />
-    </>
+    </PathnameProvider>
   );
 }
 

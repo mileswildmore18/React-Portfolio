@@ -9,6 +9,15 @@ img {
   width: 100%;
 }
 
+.active {
+    color: red; /* Change the color to whatever you prefer */
+    font-weight: bold; /* Optional: Makes the text bolder */ 
+}
+
+.highlighted {
+  color: rgb(0, 255, 98); /* Or any other style you want for the active title */
+}
+
 .miles {
   width:35%;
 }

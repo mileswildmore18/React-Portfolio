@@ -1,36 +1,55 @@
 import React, { useState, useEffect } from 'react';
 
 const ContactForm = () => {
-    //A State to manage form inputs and submission status
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [submitStatus, setSubmitStatus] = useState('');
-    const [lastBlurredField, setLastBlurredField] = useState('');
-    
-    useEffect(() => {
-        if (lastBlurredField) {
-            const fieldElement = document.getElementById(lastBlurredField);
-            if (fieldElement && fieldElement.value.trim() === '') {
-                alert(`Please fill out the ${lastBlurredField} field.`);
-            }
-        }
-    }, [lastBlurredField]);
+    const [emailError, setEmailError] = useState('');
+    const [nameError, setNameError] = useState('');
+    const [messageError, setMessageError] = useState('');
 
-    //The function to handle form submission
+    useEffect(() => {
+        if (emailError) {
+            alert(emailError);
+        }
+        if (nameError) {
+            alert(nameError);
+        }
+        if (messageError) {
+            alert(messageError);
+        }
+    }, [emailError, nameError, messageError]);
+
     const handleSubmit = (e) => {
-        e.preventDefult();
-        // A validation check to make sure the boxes are filled out
-        if (!name || !email || !message) {
-            setSubmitStatus('Please fill out all fields.');
+        e.preventDefault();
+        // Resetting previous errors
+        setEmailError('');
+        setNameError('');
+        setMessageError('');
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email.match(emailRegex)) {
+            setEmailError('Please enter a valid email address.');
             return;
         }
 
-        //Sending the data to the backend service if there is one
-        alert('Form submitted successfully')
+        // Validation check to make sure the boxes are filled out
+        if (!name) {
+            setNameError('Please fill out your name.');
+            return;
+        }
+        if (!message) {
+            setMessageError('Please fill out your message.');
+            return;
+        }
+
+        // Sending the data to the backend service if there is one
+        alert('Form submitted successfully');
         setSubmitStatus('Your message has been sent.');
 
-        //Reseting form after successful submission
+        // Resetting form after successful submission
         setName('');
         setEmail('');
         setMessage('');
@@ -38,7 +57,19 @@ const ContactForm = () => {
 
     const handleBlur = (field) => {
         if (!document.getElementById(field).value.trim()) {
-            setLastBlurredField(field);
+            switch (field) {
+                case 'name':
+                    setNameError('Please fill out your name.');
+                    break;
+                case 'email':
+                    setEmailError('Please enter a valid email address.');
+                    break;
+                case 'message':
+                    setMessageError('Please fill out your message.');
+                    break;
+                default:
+                    break;
+            }
         }
     };
 
@@ -54,6 +85,7 @@ const ContactForm = () => {
                 required
                 className='input-field'
             />
+            {nameError && <p>{nameError}</p>}
 
             <label htmlFor="email">Email:</label>
             <input
@@ -65,6 +97,7 @@ const ContactForm = () => {
                 required
                 className='input-field'
             />
+            {emailError && <p>{emailError}</p>}
 
             <label htmlFor="message">Message:</label>
             <textarea
@@ -74,8 +107,8 @@ const ContactForm = () => {
                 onBlur={() => handleBlur('message')}
                 required
                 className='input-message'
-
             />
+            {messageError && <p>{messageError}</p>}
 
             <button className='click' type="submit">Submit</button>
 
