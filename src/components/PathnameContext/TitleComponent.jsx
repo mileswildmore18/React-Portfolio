@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCurrentPath } from './PathnameContext';
-
+//Properties for when the current page is active
 const TitleComponent = ({ title, path }) => {
     const { pathname } = useCurrentPath();
 

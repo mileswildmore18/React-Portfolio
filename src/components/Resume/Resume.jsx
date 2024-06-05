@@ -1,5 +1,5 @@
 import React from 'react';
-
+// Adds the information of the Resume and providing a link to the resume online.
 const ResumeComponent = () => {
     return (
         <header>

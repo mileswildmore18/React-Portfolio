@@ -11,6 +11,7 @@ function App() {
   return (
     <PathnameProvider>
       <div className="header-wave-container">
+        {/* Provides the wave animation in the header */}
         <Wave
           fill='#1277b0'
           paused={false}

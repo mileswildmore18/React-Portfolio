@@ -54,7 +54,7 @@ const ContactForm = () => {
         setEmail('');
         setMessage('');
     };
-
+    //Alerts the user in case boxes are left empty
     const handleBlur = (field) => {
         if (!document.getElementById(field).value.trim()) {
             switch (field) {
@@ -72,9 +72,10 @@ const ContactForm = () => {
             }
         }
     };
-
+    //Gives the properties to the form
     return (
         <form onSubmit={handleSubmit}>
+            {/* Adds properties to name in form */}
             <label htmlFor="name">Name:</label>
             <input
                 type="text"
@@ -86,7 +87,7 @@ const ContactForm = () => {
                 className='input-field'
             />
             {nameError && <p>{nameError}</p>}
-
+            {/* Adds properties to email in form */}
             <label htmlFor="email">Email:</label>
             <input
                 type="email"
@@ -98,7 +99,7 @@ const ContactForm = () => {
                 className='input-field'
             />
             {emailError && <p>{emailError}</p>}
-
+            {/* Add properties to message in form */}
             <label htmlFor="message">Message:</label>
             <textarea
                 id="message"
