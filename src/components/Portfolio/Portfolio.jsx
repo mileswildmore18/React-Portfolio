@@ -25,7 +25,7 @@ const projectsData = [
         repoUrl: 'https://github.com/mileswildmore18/Note-Taker'
     },
     {
-        
+
         title: 'Weather Dashboard',
         description: 'Find out the forecast in your area or around the world',
         imageUrl: 'https://github.com/mileswildmore18/Weather-Dashboard/raw/main/Weather%20Dashboard%20screenshot.png',

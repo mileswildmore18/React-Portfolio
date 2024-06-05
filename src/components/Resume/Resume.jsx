@@ -8,10 +8,10 @@ const ResumeComponent = () => {
             <h2>Front-end Proficiences</h2>
             <p>
                 HTML <br />
-            CSS <br />
-            JavaScript <br />
-            Responsive Design <br />
-            React 
+                CSS <br />
+                JavaScript <br />
+                Responsive Design <br />
+                React
             </p>
             <h2>Back-end Proficiences</h2>
             <p>

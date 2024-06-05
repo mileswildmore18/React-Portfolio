@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
 import About from './components/About/About.jsx';
 import Error from './components/Error/Error.jsx'
@@ -35,5 +35,5 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router}/>
+  <RouterProvider router={router} />
 )
