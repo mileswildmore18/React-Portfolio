@@ -111,7 +111,7 @@ const ContactForm = () => {
             />
             {messageError && <p>{messageError}</p>}
 
-            <button className='click' type="submit">Submit</button>
+            <button className='click' input type="submit" value="Send Email" formAction='mailto:mileswildmore@hotmail.com'>Submit</button>
 
             {submitStatus && <p>{submitStatus}</p>}
         </form>
