@@ -4,7 +4,7 @@ const ResumeComponent = () => {
     return (
         <header>
             <h1>Resume</h1>
-            <p>Download my <a href='https://www.linkedin.com/in/miles-wildmore-622b2b16/overlay/1535910815724/single-media-viewer/?profileId=ACoAAANe07oBMJ_clMinKwmMX2qlpDkpq5GBFmk'>resume</a></p>
+            <p>Download my <a href='https://docs.google.com/document/d/1cIG2_CdIwOsZ4J_XUdEZ7eNnOZRmyKokOTf7pcq4DzA/edit'>resume</a></p>
             <h2>Front-end Proficiences</h2>
             <p>
                 HTML <br />
