@@ -20,7 +20,7 @@ const projectsData = [
     {
         title: 'Apple iPhone Animation',
         description: 'Witness amazing features of the iPhone',
-        imageUrl: 'https://github.com/mileswildmore18/Apple/blob/main/public/assets/images/website-picture.png',
+        imageUrl: 'https://github.com/mileswildmore18/Apple/blob/main/public/assets/images/website-picture.png?raw=true',
         projectUrl: 'https://animationmiles.netlify.app',
         repoUrl: 'https://github.com/mileswildmore18/Apple'
     },
