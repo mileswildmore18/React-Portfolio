@@ -18,6 +18,13 @@ const projectsData = [
         repoUrl: 'https://github.com/mileswildmore18/XP-Archive'
     },
     {
+        title: 'Apple iPhone Animation',
+        description: 'Witness amazing features of the iPhone',
+        imageUrl: 'https://github.com/mileswildmore18/Apple/blob/main/public/assets/images/website-picture.png',
+        projectUrl: 'https://animationmiles.netlify.app',
+        repoUrl: 'https://github.com/mileswildmore18/Apple'
+    },
+    {
         title: 'Note Taker',
         description: 'Take Notes and create a list about what you want to do',
         imageUrl: 'https://github.com/mileswildmore18/Note-Taker/raw/main/Images/Note%20Taker%20screenshot.png',
