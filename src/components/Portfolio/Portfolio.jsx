@@ -4,6 +4,20 @@ import Project from '../Project/Project';
 
 const projectsData = [
     {
+        title: 'Brainwave AI Animation',
+        description: 'Witness the new era of AI Chatting',
+        imageUrl: 'https://github.com/mileswildmore18/Brainwave/raw/main/src/assets/picture/Brainwave-picture.png',
+        projectUrl: 'https://milesbrainwave.netlify.app/',
+        repoUrl: 'https://github.com/mileswildmore18/Brainwave'
+    },
+    {
+        title: 'Apple iPhone Animation',
+        description: 'Witness amazing features of the iPhone',
+        imageUrl: 'https://github.com/mileswildmore18/Apple/blob/main/public/assets/images/website-picture.png?raw=true',
+        projectUrl: 'https://animationmiles.netlify.app',
+        repoUrl: 'https://github.com/mileswildmore18/Apple'
+    },
+    {
         title: 'The Wild Wild Wellness',
         description: 'Get fit with exercises and check out healthy diets to get you into shape',
         imageUrl: 'https://github.com/mileswildmore18/The-Wild-Wild-Wellness/raw/main/Assets/Wild%20Wild%20Wellness%20screenshot.png',
@@ -16,13 +30,6 @@ const projectsData = [
         imageUrl: 'https://github.com/mileswildmore18/XP-Archive/raw/main/public/images/XP%20Archive%20Screenshot.png',
         projectUrl: 'https://the-wild-coders.onrender.com/',
         repoUrl: 'https://github.com/mileswildmore18/XP-Archive'
-    },
-    {
-        title: 'Apple iPhone Animation',
-        description: 'Witness amazing features of the iPhone',
-        imageUrl: 'https://github.com/mileswildmore18/Apple/blob/main/public/assets/images/website-picture.png?raw=true',
-        projectUrl: 'https://animationmiles.netlify.app',
-        repoUrl: 'https://github.com/mileswildmore18/Apple'
     },
     {
         title: 'Note Taker',
